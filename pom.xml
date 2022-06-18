@@ -42,6 +42,9 @@
 						<muleVersion>4.4.0</muleVersion>
 						<applicationName>mule-ciao-mondo</applicationName>
 						<objectStoreV2>true</objectStoreV2>
+						<properties>
+							<env>dev</env>
+						</properties>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>

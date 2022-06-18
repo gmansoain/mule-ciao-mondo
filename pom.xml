@@ -34,18 +34,18 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<username>gonmule</username>
-						<password>Traiano98dc</password>
-						<workers>2</workers>
-						<workerType>Micro</workerType>
-						<environment>Sandbox</environment>
-						<muleVersion>4.3.0</muleVersion>
-						<applicationName>mule-ciao-mondo</applicationName>
-						<objectStoreV2>true</objectStoreV2>
-						<properties>
-							<env>prod</env>
-						</properties>
-					</cloudHubDeployment>
+                        <username>${username}</username>
+                        <password>${password}</password>
+                        <workers>${workers}</workers>
+                        <workerType>${workerType}</workerType>
+                        <environment>${environment}</environment>
+                        <muleVersion>${muleVersion}</muleVersion>
+                        <applicationName>mule-ciao-mondo</applicationName>
+                        <objectStoreV2>${OSv2}</objectStoreV2>
+                        <properties>
+                            <env>${env}</env>
+                        </properties>
+                    </cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>

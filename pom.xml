@@ -34,7 +34,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<username>${username}</username>
+						<username>gonmule</username>
 						<password>${password}</password>
 						<workers>${workers}</workers>
 						<workerType>${workerType}</workerType>

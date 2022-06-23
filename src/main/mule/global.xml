@@ -5,7 +5,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="GON_HTTP_Listener_Config" doc:name="HTTP Listener config" doc:id="664a7168-13c1-48b2-9b2e-b331c05fe5a9" >
-		<http:listener-connection host="0.0.0.0" port="${http.port}" />
+		<http:listener-connection host="${http.host}" port="${http.port}" />
 	</http:listener-config>
 	<global-property doc:name="Global Property" doc:id="583d3423-e289-4196-aa2b-f3831df03858" name="env" value="dev" />
 	<configuration-properties doc:name="Configuration properties" doc:id="c806c32c-8f31-4d56-8e82-72cd5188bcee" file="properties/properties-${env}.yaml" />

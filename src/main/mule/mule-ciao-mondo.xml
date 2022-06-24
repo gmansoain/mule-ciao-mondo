@@ -6,7 +6,8 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<flow name="mule-ciao-mondoFlow" doc:id="0f76c888-5cd3-45b2-8a9e-05827cfa8a56" >
 		<http:listener doc:name="Listener" doc:id="e418c867-27a2-473f-855d-dd706db57cdf" config-ref="GON_HTTP_Listener_Config" path="/ciao"/>
-		<logger level="INFO" doc:name="Logger" doc:id="e8e0eae9-8504-4456-878a-d6e168414977" message="${var1}"/>
 		<set-payload value="Ciao Gon!" doc:name="Set Payload" doc:id="3e95bb51-e141-41e6-8590-5efdfc3988a9" />
+		<logger level="INFO" doc:name="Logger" doc:id="e8e0eae9-8504-4456-878a-d6e168414977" message="${var1}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="588469bd-42c1-47cd-90f2-91d73a107dc0" message='#[output application/java&#10;---&#10;"Username: " ++ Mule::p("secure::example.username")&#10;++ " -- " ++&#10;"Password: " ++ Mule::p("secure::example.password")]'/>
 	</flow>
 </mule>

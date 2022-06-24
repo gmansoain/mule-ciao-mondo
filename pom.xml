@@ -4,7 +4,7 @@
 
 	<groupId>37aa8fe0-4188-44c1-a9b5-bdce3ca12f0b</groupId>
 	<artifactId>mule-ciao-mondo</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.3</version>
 	<packaging>mule-application</packaging>
 
 	<name>mule-ciao-mondo</name>
@@ -44,8 +44,10 @@
 						<objectStoreV2>${OSv2}</objectStoreV2>
 						<properties>
 							<env>${env}</env>
+							<secure.key>${secure.key}</secure.key>
 						</properties>
 					</cloudHubDeployment>
+					<classifier>mule-application-example</classifier>
 				</configuration>
 			</plugin>
 		</plugins>
